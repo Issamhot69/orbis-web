@@ -256,7 +256,7 @@ export default function InvestorsPage() {
               { label:'Valorisation',     value:'$2,500,000 USD' },
               { label:'Traction',         value:'12 modules, 3 clients beta' },
               { label:'Vision',           value:'Remplacer LinkedIn + Alibaba' },
-            ].map(([k,v]) => (
+            ].map((item: any) => {const k = item.label; const v = item.value; return (
               <div key={k} style={{ display:'flex', justifyContent:'space-between', padding:'10px 0', borderBottom:'1px solid '+colors.border, fontSize:'13px' }}>
                 <span style={{ color: colors.textMuted }}>{k}</span>
                 <span style={{ color: colors.text, fontWeight:'700' }}>{v}</span>
