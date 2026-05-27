@@ -46,7 +46,7 @@ export default function ReferralPage() {
       <div style={{ display:'flex', alignItems:'center', justifyContent:'space-between', marginBottom:'32px' }}>
         <div style={{ display:'flex', alignItems:'center', gap:'12px' }}>
           <button onClick={() => router.push('/dashboard')} style={{ background:'rgba(255,255,255,0.05)', border:'1px solid #1e3a5f', borderRadius:'8px', padding:'8px 14px', color:'#4a6fa5', cursor:'pointer', fontSize:'12px' }}>
-            <- Dashboard
+            ← Dashboard
           </button>
           <div>
             <h1 style={{ margin:0, fontSize:'24px', fontWeight:'900' }}>🤝 Programme Referral ORBIS</h1>
