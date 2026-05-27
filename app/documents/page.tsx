@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const DOC_TYPES = [
   { id:'contract',  label:'Contrat',        icon:'📝', color:'#1a6fff' },

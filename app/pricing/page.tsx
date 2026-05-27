@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Card, Button, colors } from '../components/orbis-ui'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const PLANS = [
   {

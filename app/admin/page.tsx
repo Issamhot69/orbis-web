@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { PageLayout, Card, Button, Badge, StatsGrid, SectionTitle, colors } from '../components/orbis-ui'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 export default function AdminPage() {
   const [stats, setStats]     = useState<any>(null)

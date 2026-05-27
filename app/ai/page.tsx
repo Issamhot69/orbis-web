@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const SUGGESTIONS = [
   { icon:'💡', text:'Analyse mes opportunites business et donne-moi les 3 plus urgentes' },

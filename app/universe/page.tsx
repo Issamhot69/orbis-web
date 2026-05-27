@@ -2,7 +2,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const MOCK_NODES = [
   { id:'1', name:'ORBIS Corp',        industry:'Technology',    location:'Casablanca', size:'startup',    connections:8,  trustScore:95, color:'#1a6fff' },

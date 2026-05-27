@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const STATUS_CONFIG: any = {
   pending:    { label:'En attente',  color:'#f4c842', icon:'⏳' },

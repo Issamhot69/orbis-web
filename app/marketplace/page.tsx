@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { PageLayout, Card, Button, Input, Select, Badge, StatsGrid, EmptyState, SectionTitle, colors } from '../components/orbis-ui'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 const CATEGORIES = [
   {id:'1',name:'Technology',icon:'💻'},{id:'2',name:'Marketing',icon:'📢'},
   {id:'3',name:'Finance',icon:'💰'},{id:'4',name:'Legal',icon:'⚖️'},

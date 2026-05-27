@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import { PageLayout, Card, Button, Input, Select, Badge, StatsGrid, EmptyState, SectionTitle, colors } from '../components/orbis-ui'
 
-const API = 'http://localhost:4080'
+const API = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:4080'
 
 const INDUSTRIES = ['Technology','Finance','Healthcare','Education','Manufacturing','Logistics','Marketing','Legal','Consulting','Real Estate','Energy','Agriculture'].map(i => ({ value:i, label:i }))
 
