@@ -34,7 +34,7 @@ export default function LandingPage() {
   const testimonials = [
     { name:'Sarah Chen', role:'CEO, TechVentures SF', flag:'🇺🇸', text:'ORBIS replaced 6 tools we were using. Speech-to-speech changed how we do deals globally.' },
     { name:'Klaus Weber', role:'Director, Berlin Trade GmbH', flag:'🇩🇪', text:'We closed a $2M deal with a Japanese partner without a translator. ORBIS made it possible.' },
-    { name:'Yuki Tanaka', role:'CTO, Tokyo AI Labs', flag:'🇯🇵', text:'The Trust Passport system is revolutionary. We now know exactly who we're dealing with.' },
+    { name:'Yuki Tanaka', role:'CTO, Tokyo AI Labs', flag:'🇯🇵', text:'The Trust Passport system is revolutionary. We now know exactly who we are dealing with.' },
   ]
 
   return (
