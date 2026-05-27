@@ -1,0 +1,42 @@
+{
+  "name": "ORBIS — One platform. Every business. Everywhere.",
+  "short_name": "ORBIS",
+  "description": "La premiere plateforme B2B mondiale — Business OS + 4 Marketplaces + IA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060e1a",
+  "theme_color": "#B22234",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "finance"],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "url": "/dashboard",
+      "description": "Tableau de bord ORBIS"
+    },
+    {
+      "name": "Marketplace",
+      "url": "/marketplace",
+      "description": "Marketplace B2B"
+    },
+    {
+      "name": "Messages",
+      "url": "/messages",
+      "description": "Messages temps reel"
+    }
+  ]
+}

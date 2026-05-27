@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="80" fill="#060e1a"/>
+  <rect width="512" height="512" rx="80" fill="#B22234" opacity="0.15"/>
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#B22234" stroke-width="20"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="#B22234" stroke-width="15"/>
+  <circle cx="256" cy="256" r="60" fill="#B22234"/>
+  <text x="256" y="460" font-family="system-ui" font-size="48" font-weight="900" fill="#4a6fa5" text-anchor="middle">ORBIS</text>
+</svg>
