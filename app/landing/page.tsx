@@ -25,10 +25,10 @@ export default function LandingPage() {
     { icon:'🎙️', title:'Speech to Speech IA', desc:'Parlez votre langue. Votre partenaire entend dans la sienne. Temps réel.' },
     { icon:'🛂', title:'Trust Passport', desc:'Score de confiance vérifié pour chaque entreprise. Zéro arnaque.' },
     { icon:'📝', title:'Contrats Auto', desc:'Généré, signé, archivé en 30 secondes. 190 juridictions.' },
-    { icon:'🔒', title:'Escrow ORBIS', desc:'Paiement bloqué jusqu'à livraison confirmée. Argent 100% sécurisé.' },
+    { icon:'🔒', title:'Escrow ORBIS', desc:'Paiement bloqué jusqu a livraison confirmée. Argent 100% sécurisé.' },
     { icon:'🛰️', title:'Satellite Tracking', desc:'Suivi GPS temps réel de vos produits partout dans le monde.' },
     { icon:'🤖', title:'AI Assistant', desc:'Analysez, négociez, décidez. Propulsé par Claude (Anthropic).' },
-    { icon:'📊', title:'Predictive Deals', desc:'L'IA prédit vos deals 72h avant. Agissez au bon moment.' },
+    { icon:'📊', title:'Predictive Deals', desc:'L IA prédit vos deals 72h avant. Agissez au bon moment.' },
   ]
 
   const testimonials = [
@@ -166,7 +166,7 @@ export default function LandingPage() {
 
       {/* CTA */}
       <section style={{ padding:'80px 40px', background:'linear-gradient(135deg,#0f1f3d 0%,#1a0a0f 100%)', textAlign:'center', borderTop:'1px solid #1e3a5f' }}>
-        <h2 style={{ fontSize:'40px', fontWeight:'900', margin:'0 0 16px', letterSpacing:'-1px' }}>Rejoignez ORBIS aujourd'hui</h2>
+        <h2 style={{ fontSize:'40px', fontWeight:'900', margin:'0 0 16px', letterSpacing:'-1px' }}>Rejoignez ORBIS aujourd hui</h2>
         <p style={{ fontSize:'16px', color:'#6a8aaa', marginBottom:'32px' }}>Gratuit pour commencer. Aucune carte bancaire requise.</p>
         <div style={{ display:'flex', gap:'12px', justifyContent:'center', marginBottom:'16px' }}>
           <input value={email} onChange={e => setEmail(e.target.value)} placeholder="votre@email.com" style={{ padding:'14px 20px', background:'#0a1628', border:'1px solid #1e3a5f', borderRadius:'10px', color:'#fff', fontSize:'14px', outline:'none', width:'300px' }}/>
