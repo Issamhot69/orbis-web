@@ -36,15 +36,7 @@ export default function ReferralPage() {
     { platform:'LinkedIn', icon:'💼', color:'#0077b5', text:'Je viens de decouvrir ORBIS — la plateforme B2B qui remplace LinkedIn + Alibaba + Fiverr. Speech-to-Speech IA, Trust Passport, 4 Marketplaces. Essayez gratuitement: ' + referralLink },
     { platform:'Twitter/X', icon:'🐦', color:'#1da1f2', text:'ORBIS est incroyable - Business OS + 4 Marketplaces + IA en une seule plateforme. Speech-to-Speech temps reel dans 12 langues! Rejoignez avec mon lien: ' + referralLink + ' #B2B #AI #Business' },
     { platform:'WhatsApp', icon:'💬', color:'#25d366', text:'Salut! Tu dois essayer ORBIS - une super plateforme B2B avec IA. Completement gratuit pour commencer: ' + referralLink },
-    { platform:'Email', icon:'📧', color:'#B22234', text:'Sujet: Decouvre ORBIS - la plateforme B2B du futur
-
-Bonjour,
-
-Je voulais te partager ORBIS, une plateforme B2B incroyable que j utilise. Elle combine Business OS, 4 Marketplaces et IA avec Speech-to-Speech en 12 langues.
-
-Essaie gratuitement: ' + referralLink + '
-
-Bonne journee!' },
+    { platform:'Email', icon:'📧', color:'#B22234', text:'Decouvre ORBIS - essaie gratuitement: ' + referralLink },
   ]
 
   return (
