@@ -136,7 +136,7 @@ export default function Dashboard() {
         </div>
         {/* User */}
         <div style={{ padding:'16px 20px', borderTop:'1px solid #1e3a5f' }}>
-          <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'14px' }}>
+          <div onClick={() => router.push('/settings')} style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'10px', cursor:'pointer' }}>
             <div style={{ width:'38px', height:'38px', borderRadius:'50%', background:'linear-gradient(135deg,#B22234,#7a0f1e)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'14px', fontWeight:'800', color:'#fff' }}>
               {user?.firstName?.[0]}{user?.lastName?.[0]}
             </div>
@@ -145,6 +145,9 @@ export default function Dashboard() {
               <div style={{ fontSize:'10px', color:'#B22234', fontWeight:'600' }}>Admin ORBIS</div>
             </div>
           </div>
+          <button onClick={() => router.push('/settings')} style={{ fontSize:'12px', color:'#4a6fa5', background:'rgba(255,255,255,0.05)', border:'1px solid #1e3a5f', cursor:'pointer', padding:'8px 12px', borderRadius:'8px', width:'100%', fontWeight:'600', marginBottom:'8px' }}>
+            ⚙️ Parametres
+          </button>
           <button onClick={logout} style={{ fontSize:'12px', color:'#ff6b6b', background:'rgba(255,107,107,0.1)', border:'1px solid rgba(255,107,107,0.3)', cursor:'pointer', padding:'8px 12px', borderRadius:'8px', width:'100%', fontWeight:'600' }}>
             {t.logout}
           </button>

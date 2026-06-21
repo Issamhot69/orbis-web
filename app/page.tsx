@@ -91,6 +91,11 @@ export default function Home() {
               <label style={{ fontSize:'12px', color:'#666' }}>Mot de passe</label>
               <input type="password" value={form.password} onChange={update('password')} placeholder="••••••••" required style={{ padding:'12px', background:'#111', border:'1px solid #222', borderRadius:'8px', color:'#fff', fontSize:'14px', outline:'none' }}/>
             </div>
+            {mode === 'login' && (
+              <button type="button" onClick={() => router.push('/forgot-password')} style={{ alignSelf:'flex-end', background:'none', border:'none', color:'#6366f1', fontSize:'12px', cursor:'pointer', padding:0, marginTop:'-10px' }}>
+                Mot de passe oublie ?
+              </button>
+            )}
             {error && <div style={{ padding:'12px', background:'#1a0808', border:'1px solid #3a1010', borderRadius:'8px', color:'#f87171', fontSize:'13px' }}>{error}</div>}
             <button type="submit" disabled={loading} style={{ marginTop:'8px', padding:'14px', background:'#6366f1', border:'none', borderRadius:'8px', color:'#fff', fontSize:'15px', fontWeight:'600', cursor:'pointer', opacity: loading ? 0.6 : 1 }}>
               {loading ? 'Chargement...' : mode === 'login' ? 'Se connecter' : 'Créer mon compte'}
