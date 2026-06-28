@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PageLayout, Card, Button, Badge, StatsGrid, SectionTitle, colors } from '../components/orbis-ui'
 import { OrbisActionBar } from '../components/orbis-suite'
 import { TrustTransaction } from '../components/trust-transaction'
