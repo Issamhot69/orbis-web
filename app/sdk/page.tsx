@@ -189,10 +189,8 @@ export default function SDKPage() {
           <SectionTitle color={colors.success}>Quick Start — 3 etapes</SectionTitle>
           {[
             { step:'1', title:'Installer le SDK', code:'npm install orbis-sdk', desc:'Compatible Node.js, React, Vue, Angular' },
-            { step:'2', title:'Initialiser et se connecter', code:'const orbis = new OrbisSDK()
-await orbis.login(email, password)', desc:'JWT token stocke automatiquement' },
-            { step:'3', title:'Utiliser les modules', code:'await orbis.getListings({ search: "AI" })
-await orbis.createOrganization({...})', desc:'Acces a tous les modules ORBIS' },
+            { step:'2', title:'Initialiser et se connecter', code:'const orbis = new OrbisSDK(); await orbis.login(email, password)', desc:'JWT token stocke automatiquement' },
+            { step:'3', title:'Utiliser les modules', code:'await orbis.getListings({ search: AI }); await orbis.createOrganization({...})', desc:'Acces a tous les modules ORBIS' },
           ].map((s,i) => (
             <div key={i} style={{ display:'flex', gap:'12px', padding:'14px', background: colors.bg, border:'1px solid '+colors.border, borderRadius:'10px', marginBottom:'10px' }}>
               <div style={{ width:'32px', height:'32px', borderRadius:'50%', background:'#B22234', display:'flex', alignItems:'center', justifyContent:'center', fontSize:'14px', fontWeight:'900', color:'#fff', flexShrink:0 }}>{s.step}</div>
