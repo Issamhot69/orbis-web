@@ -70,7 +70,7 @@ function SearchResults() {
                 <div style={{ fontSize:'13px', fontWeight:'700', color: colors.text }}>{o.org?.name || o.name}</div>
                 <div style={{ fontSize:'11px', color: colors.textMuted }}>{o.org?.industry || o.industry || 'Organisation'}</div>
               </div>
-              <Badge color="info" style={{ marginLeft:'auto' }}>{o.role || 'member'}</Badge>
+              <div style={{ marginLeft:'auto' }}><Badge color='info'>{o.role || 'member'}</Badge></div>
             </div>
           ))}
         </Card>
