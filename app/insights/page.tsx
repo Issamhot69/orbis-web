@@ -124,7 +124,7 @@ export default function InsightsPage() {
                 <div style={{ fontSize:'13px', fontWeight:'800', color: colors.text }}>ORBIS AI Coach</div>
                 <div style={{ fontSize:'11px', color: colors.textMuted }}>Propulse par Claude (Anthropic)</div>
               </div>
-              <Badge color="success" style={{ marginLeft:'auto' }}>En ligne</Badge>
+              <div style={{ marginLeft:'auto' }}><Badge color='success'>En ligne</Badge></div>
             </div>
             <p style={{ margin:'0 0 14px', fontSize:'12px', color:'#6a8aaa', lineHeight:'1.6' }}>
               Votre coach IA analyse votre activite business en continu et vous suggere les meilleures actions pour maximiser votre croissance.
