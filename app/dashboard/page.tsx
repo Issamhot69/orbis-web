@@ -1,5 +1,6 @@
 'use client'
 import { NotificationBell } from '../components/notifications'
+import { useRouter as useNextRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -171,6 +172,7 @@ export default function Dashboard() {
             </div>
 
             {/* Language selector */}
+            <button onClick={() => window.location.href='/search'} style={{ padding:'8px 16px', background:'rgba(255,255,255,0.05)', border:'1px solid #1e3a5f', borderRadius:'8px', color:'#4a6fa5', cursor:'pointer', fontSize:'13px' }}>🔍 Rechercher</button>
             <NotificationBell /><div style={{ position:'relative' }}>
               <button onClick={() => setShowLangs(!showLangs)} style={{ padding:'8px 16px', background:'rgba(255,255,255,0.05)', border:'1px solid #1e3a5f', borderRadius:'20px', fontSize:'13px', color:'#ffffff', fontWeight:'700', cursor:'pointer', display:'flex', alignItems:'center', gap:'8px' }}>
                 {LANGS[lang].flag} {LANGS[lang].name} <span style={{ fontSize:'10px', color:'#8899aa' }}>▼</span>
